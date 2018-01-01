@@ -67991,13 +67991,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app';
+        this.title = "app";
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',
-            templateUrl: './Scripts/src/app.component.html',
-            styleUrls: ['./Scripts/src/app.component.css']
+            templateUrl: "./Scripts/src/app.component.html",
+            styleUrls: ["./Scripts/src/app.component.css"]
         })
     ], AppComponent);
     return AppComponent;
