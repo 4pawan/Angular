@@ -5,21 +5,22 @@ var path = require("path");
 module.exports = {
     context: path.resolve(__dirname, "./Scripts/src"),
     resolve: {
-        extensions: ['.ts']
+        extensions: [".tsx", ".ts", ".js"]
     },
     entry: {
-        main: './main'
+        main: "./main"
     },
+    //devtool: "inline-source-map",
     output: {
-        publicPath: '/Scripts/dist',
-        path: path.resolve(__dirname, './Scripts/dist'),
-        filename: '[name].build.js'
+        publicPath: "/Scripts/dist",
+        path: path.resolve(__dirname, "./Scripts/dist"),
+        filename: "[name].bundle.js"
     },
     module: {
         rules: [
             {
-                test: /\.ts$/,
-                use: 'ts-loader',
+                test: /\.tsx?$/,
+                use: "ts-loader",
                 exclude: /node_modules/
             }
         ]
