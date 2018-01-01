@@ -1,4 +1,5 @@
-﻿
+﻿/// <binding BeforeBuild='Run - Development' />
+
 
 var path = require("path");
 
