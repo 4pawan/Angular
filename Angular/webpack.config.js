@@ -9,7 +9,8 @@ module.exports = {
         extensions: [".tsx", ".ts", ".js"]
     },
     entry: {
-        main: "./main"
+        main: "./main" //,
+        //angular: "./app.module"
     },
     //devtool: "inline-source-map",
     output: {
